@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MithStore | Focused Productivity</title>
+    <meta name="description" content="Minimalist tools for deep work.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-inner">
+            <a href="#" class="logo" id="nav-logo">MithStore.</a>
+            <div class="nav-links">
+                <button class="nav-link active" data-target="view-catalog">Essentials</button>
+                <button class="nav-link" data-target="view-auth">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <!-- VIEW: CATALOG (The Storefront) -->
+        <section id="view-catalog" class="view-section active">
+            <header class="hero-header">
+                <h1 class="hero-title">TOOLS FOR<br>DEEP WORK.</h1>
+                <p class="hero-subtitle">A meticulously curated collection of minimalist productivity essentials designed to eliminate distraction and elevate focus.</p>
+            </header>
+
+            <div class="system-status" id="api-status-badge">
+                <div class="status-dot"></div>
+                <span id="api-status-text">SYNCING CATALOG...</span>
+            </div>
+
+            <div id="catalog-loader" class="loader-wrapper">
+                <div class="cyber-loader"></div>
+            </div>
+
+            <div id="product-grid" class="bento-grid">
+                <!-- Products injected via Fetch API -->
+            </div>
+        </section>
+
+        <!-- VIEW: AUTHENTICATION & HIDDEN ARCHITECTURE -->
+        <section id="view-auth" class="view-section">
+            <header class="hero-header" style="text-align: center;">
+                <h1 class="hero-title" id="auth-title" style="font-size: 4rem;">SYSTEM LOGIN</h1>
+                <p class="hero-subtitle" id="auth-subtitle" style="margin: 0 auto;">Authenticate to access developer specs and generate tokens.</p>
+            </header>
+
+            <div class="auth-wrapper" id="auth-form-container">
+                <form id="auth-form" class="auth-form" onsubmit="return false;">
+                    <input type="text" id="username-input" class="input-field" placeholder="Username (admin)" autocomplete="off">
+                    <input type="password" id="password-input" class="input-field" placeholder="Password (mith-secure)" autocomplete="off">
+                    <button type="submit" id="auth-submit-btn" class="btn-auth">Sign In</button>
+                    
+                    <div id="auth-error-msg" style="color: var(--error-color); font-family: var(--font-mono); font-size: 13px; margin-top: 16px; display: none;">
+                        > ERR: INVALID_CREDENTIALS
+                    </div>
+                </form>
+            </div>
+
+            <!-- POST-LOGIN CONTENT (Hidden initially) -->
+            <div id="post-login-dashboard" style="display: none; animation: fadeIn 0.6s ease;">
+                
+                <div id="jwt-display" class="jwt-console" style="display: block; margin-bottom: 60px;">
+                    <h4>> AUTH_SUCCESS // JWT_GENERATED</h4>
+                    <code id="jwt-string"></code>
+                </div>
+
+                <!-- Assignment Requirements Moved Here -->
+                <h2 style="font-size: 2rem; margin-bottom: 32px; letter-spacing: -1px;">SYSTEM ARCHITECTURE.</h2>
+                <div class="grid-2">
+                    <div class="spec-card">
+                        <h3>REST over SOAP</h3>
+                        <p>MithStore utilizes a high-speed <span class="highlight">REST API</span>. Unlike legacy <span class="highlight">SOAP</span> systems that rely on heavy XML payloads and rigid WSDL contracts, our stateless JSON architecture ensures microsecond latency and fluid DOM rendering.</p>
+                    </div>
+                    
+                    <div class="spec-card">
+                        <h3>Global Deployment</h3>
+                        <p>Code is pushed through strict CI/CD pipelines via <span class="highlight">GitHub</span>. The application is distributed across the <span class="highlight">Vercel Edge Network</span>. Cryptographic keys are injected at runtime via Environment Variables.</p>
+                    </div>
+
+                    <div class="spec-card" style="grid-column: 1 / -1;">
+                        <h3>E-Commerce Case Study</h3>
+                        <p>When you load the MithStore catalog, the client triggers an asynchronous Fetch request to our endpoint. The engine handles HTTP statuses natively (200 OK renders the grid, while 404/500 trigger specific fallback UIs). This ensures uninterrupted user flow even during network instability.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer style="text-align: center; padding: 40px 0; border-top: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-top: 80px;">
+        > MITHSTORE // ADVANCED WEB SYSTEMS INTEGRATION // 2024
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

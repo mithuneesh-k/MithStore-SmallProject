@@ -1,0 +1,50 @@
+[
+  {
+    "id": "prod_01",
+    "title": "Grovemade Desk Shelf",
+    "category": "Workspace",
+    "price": 240.00,
+    "image": "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&q=80&w=1000",
+    "description": "Crafted from premium walnut. Elevates your monitor and organizes your essentials."
+  },
+  {
+    "id": "prod_02",
+    "title": "NuPhy Air75 Keyboard",
+    "category": "Peripherals",
+    "price": 129.00,
+    "image": "https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&q=80&w=1000",
+    "description": "Ultra-slim wireless mechanical keyboard with low-profile Gateron switches."
+  },
+  {
+    "id": "prod_03",
+    "title": "MX Master 3S",
+    "category": "Peripherals",
+    "price": 99.00,
+    "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&q=80&w=1000",
+    "description": "Ergonomic precision mouse with quiet clicks and an electromagnetic scroll wheel."
+  },
+  {
+    "id": "prod_04",
+    "title": "Minimalist Desk Pad",
+    "category": "Workspace",
+    "price": 45.00,
+    "image": "https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&q=80&w=1000",
+    "description": "Premium matte leather desk mat. Provides a smooth, non-slip surface for deep work."
+  },
+  {
+    "id": "prod_05",
+    "title": "Lamy 2000 Pen",
+    "category": "Stationery",
+    "price": 199.00,
+    "image": "https://images.unsplash.com/photo-1585336261022-680e295ce3fe?auto=format&fit=crop&q=80&w=1000",
+    "description": "An iconic Bauhaus design. Brushed Makrolon and stainless steel fountain pen."
+  },
+  {
+    "id": "prod_06",
+    "title": "reMarkable 2",
+    "category": "Focus",
+    "price": 299.00,
+    "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&q=80&w=1000",
+    "description": "The next-generation paper tablet. Zero distractions, purely designed for thinking."
+  }
+]
