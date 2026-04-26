@@ -198,6 +198,46 @@ nav {
 .status-ok .status-dot { background: var(--success-color); box-shadow: 0 0 8px var(--success-color); }
 .status-err .status-dot { background: var(--error-color); box-shadow: 0 0 8px var(--error-color); }
 
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+}
+
+.filter-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  padding: 8px 20px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--transition);
+}
+
+.filter-btn:hover {
+  border-color: var(--text-muted);
+  color: var(--text-main);
+}
+
+.filter-btn.active {
+  background: var(--text-main);
+  color: var(--bg-color);
+  border-color: var(--text-main);
+}
+
 /* Premium Product Grid */
 .bento-grid {
   display: grid;
@@ -216,6 +256,14 @@ nav {
   flex-direction: column;
   transition: all var(--transition);
   cursor: pointer;
+  opacity: 0;
+  animation: cardAppear 0.8s var(--transition) forwards;
+  animation-delay: calc(var(--animation-order) * 0.1s);
+}
+
+@keyframes cardAppear {
+  from { opacity: 0; transform: translateY(30px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 .product-card::before {
@@ -246,17 +294,34 @@ nav {
   height: 100%;
 }
 
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
 .product-tag {
-  align-self: flex-start;
   font-family: var(--font-mono);
   font-size: 10px;
   padding: 6px 12px;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-pill);
   color: var(--text-muted);
-  margin-bottom: 40px;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.product-badge {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  padding: 6px 12px;
+  background: var(--text-main);
+  color: var(--bg-color);
+  border-radius: var(--radius-pill);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
 .product-image-container {

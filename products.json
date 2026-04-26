@@ -5,7 +5,8 @@
     "category": "Workspace",
     "price": 240.00,
     "image": "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&q=80&w=1000",
-    "description": "Crafted from premium walnut. Elevates your monitor and organizes your essentials."
+    "description": "Crafted from premium walnut. Elevates your monitor and organizes your essentials.",
+    "badge": "Classic"
   },
   {
     "id": "prod_02",
@@ -13,7 +14,8 @@
     "category": "Peripherals",
     "price": 129.00,
     "image": "https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&q=80&w=1000",
-    "description": "Ultra-slim wireless mechanical keyboard with low-profile Gateron switches."
+    "description": "Ultra-slim wireless mechanical keyboard with low-profile Gateron switches.",
+    "badge": "Popular"
   },
   {
     "id": "prod_03",
@@ -45,6 +47,59 @@
     "category": "Focus",
     "price": 299.00,
     "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&q=80&w=1000",
-    "description": "The next-generation paper tablet. Zero distractions, purely designed for thinking."
+    "description": "The next-generation paper tablet. Zero distractions, purely designed for thinking.",
+    "badge": "Bestseller"
+  },
+  {
+    "id": "prod_07",
+    "title": "TP-7 Field Recorder",
+    "category": "Audio",
+    "price": 1499.00,
+    "image": "https://images.unsplash.com/photo-1558403194-611308249627?auto=format&fit=crop&q=80&w=1000",
+    "description": "A pocket-sized engineering marvel. Tactile motorized tape reel and studio-grade sound.",
+    "badge": "Limited"
+  },
+  {
+    "id": "prod_08",
+    "title": "Nothing Phone (2)",
+    "category": "Tech",
+    "price": 599.00,
+    "image": "https://images.unsplash.com/photo-1688649102473-099b9d16aa32?auto=format&fit=crop&q=80&w=1000",
+    "description": "Experience the Glyph Interface. A unique approach to light and sound notifications.",
+    "badge": "New"
+  },
+  {
+    "id": "prod_09",
+    "title": "Sony WH-1000XM5",
+    "category": "Audio",
+    "price": 349.00,
+    "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&q=80&w=1000",
+    "description": "Industry-leading noise cancellation. Crystal-clear hands-free calling and Alexa voice control."
+  },
+  {
+    "id": "prod_10",
+    "title": "Keychron Q1 Pro",
+    "category": "Peripherals",
+    "price": 199.00,
+    "image": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&q=80&w=1000",
+    "description": "Fully customizable QMK/VIA wireless mechanical keyboard in a solid aluminum body.",
+    "badge": "Premium"
+  },
+  {
+    "id": "prod_11",
+    "title": "Nomad Base One Max",
+    "category": "Power",
+    "price": 149.00,
+    "image": "https://images.unsplash.com/photo-1622445275463-afa2ab738c34?auto=format&fit=crop&q=80&w=1000",
+    "description": "Official MagSafe charging at 15W. Weighted glass and metal design for your bedside."
+  },
+  {
+    "id": "prod_12",
+    "title": "Apple Vision Pro",
+    "category": "Computing",
+    "price": 3499.00,
+    "image": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&q=80&w=1000",
+    "description": "The ultimate spatial computer. Blend digital content with your physical world seamlessly.",
+    "badge": "Futuristic"
   }
 ]
